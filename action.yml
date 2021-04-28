@@ -2,10 +2,10 @@ name: 'File Manager'
 description: 'Github action for repository file management'
 author: 'Morteza Jamali'
 inputs:
-  milliseconds: # change this
+  tasks:
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'Tasks file path'
+    default: 'fileManagerTasks.yml'
 runs:
   using: 'node12'
   main: 'dist/index.js'

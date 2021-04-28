@@ -1,0 +1,8 @@
+tasks:
+  copy:
+    - src: './first/file.php'
+      dest: './dest/dest.js'
+    - src: './first/file.php'
+      dest: './dest/dest.js'
+    - src: './first/file.php'
+      dest: './dest/dest.js'
