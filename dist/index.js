@@ -18,12 +18,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.run = exports.copy = void 0;
+const path_1 = __webpack_require__(622);
 const fs_1 = __webpack_require__(747);
 const js_yaml_1 = __webpack_require__(917);
 const core_1 = __webpack_require__(186);
 const copy = (prop) => __awaiter(void 0, void 0, void 0, function* () {
     for (const { src, dest } of prop) {
-        fs_1.copyFile(src, dest, error => {
+        fs_1.copyFile(path_1.resolve(src), path_1.resolve(dest), error => {
             if (error) {
                 throw error;
             }

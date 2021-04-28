@@ -1,0 +1,5 @@
+tasks:
+  copy:
+    - src: 'source.js'
+      dest: 'test.js'
+  remove: ['first.js', 'second.ts']
